@@ -4,7 +4,7 @@ import SearchSortFilter from "./SearchSortFilter"
 
 function MainPage() {
     return (
-        <div>
+        <div className= "ui main container">
             <p>this is mainpage</p>
             <SearchSortFilter />
             <PostForm />

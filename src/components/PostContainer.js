@@ -1,12 +1,14 @@
-import PostCard from "./PostCard"
+import PostCard from "./PostCard";
 
 function PostContainer() {
-    return (
-        <div>
-            <p>this is PostContainer</p>
-            <PostCard />
-        </div>
-    )
+  return (
+    <>
+      <div className="ui segment">
+          <p>this is PostContainer</p>
+          <PostCard />
+      </div>
+    </>
+  );
 }
 
-export default PostContainer
+export default PostContainer;
