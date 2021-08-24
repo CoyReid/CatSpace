@@ -8,41 +8,15 @@ import Profile from "./components/Profile";
 import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
+import { users } from "./data/db.json"
 import { Segment, Grid, Column } from 'semantic-ui-react'
 
 function App() {
   
-  const [grumpyPosts, setGrumpyPosts] = useState([]);
-  const [garfieldPosts, setGarfieldPosts] = useState([]);
-  const [tomPosts, setTomPosts] = useState([]);
-  const [bootsPosts, setBootsPosts] = useState([]);
+  const [usersData, setUsersData] = useState(users);
 
-  useEffect(() => {
-    fetch("http://localhost:8000/user/")
-    .then(r => r.json())
-    .then(data => setGrumpyPosts(data[0].posts))
-  },[])
 
-  useEffect(() => {
-    fetch("http://localhost:8000/friends/1")
-    .then(r => r.json())
-    .then(data => setGarfieldPosts(data.posts))
-  },[])
 
-  useEffect(() => {
-    fetch("http://localhost:8000/friends/2")
-    .then(r => r.json())
-    .then(data => setTomPosts(data.posts))
-  },[])
-
-  useEffect(() => {
-    fetch("http://localhost:8000/friends/3")
-    .then(r => r.json())
-    .then(data => setBootsPosts(data.posts))
-  },[])
-
-  console.log(new Date())
-  
   return (
     <>
     <div className="ui main container">
@@ -59,7 +33,7 @@ function App() {
             <Settings />
           </Route>
           <Route exact path="/">
-            <MainPage />
+            <MainPage usersData={usersData}/>
           </Route>
         </Switch>
  

@@ -1,5 +1,5 @@
 {
-  "user": [
+  "users": [
     {
       "name": "@Grumpy211",
       "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg",
@@ -15,7 +15,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/kfgFxLP7U.png",
@@ -28,7 +30,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/MTUyMzExNg.jpg",
@@ -41,7 +45,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/131.jpg",
@@ -54,7 +60,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/e38.jpg",
@@ -67,7 +75,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/8rhxCDJzE.jpg",
@@ -80,7 +90,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/MTU0NzEwOA.jpg",
@@ -93,7 +105,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/kOAHCDEzA.jpg",
@@ -106,7 +120,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/kc.jpg",
@@ -119,7 +135,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/bh2.jpg",
@@ -132,13 +150,13 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@Grumpy211",
+          "image": "https://media.wired.com/photos/5cdefb92b86e041493d389df/1:1/w_988,h_988,c_limit/Culture-Grumpy-Cat-487386121.jpg"
         }
       ],
       "id": 1
-    }
-  ],
-  "friends": [
+    },
     {
       "name": "@GarfieldLasagna9",
       "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png",
@@ -154,7 +172,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/1n6.jpg",
@@ -167,7 +187,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/6n8IXE2E0.jpg",
@@ -180,7 +202,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/wdT-_qOL3.jpg",
@@ -193,7 +217,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/s_SbQ3Xju.jpg",
@@ -206,7 +232,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/cbb.jpg",
@@ -219,7 +247,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/MTg1ODAwMg.jpg",
@@ -232,7 +262,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/aue.jpg",
@@ -245,7 +277,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/OYFUU3-Ds.jpg",
@@ -258,7 +292,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/ZSlo9rPP7.jpg",
@@ -271,10 +307,12 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@GarfieldLasagna9",
+          "image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Garfield_the_Cat.svg/1200px-Garfield_the_Cat.svg.png"
         }
       ],
-      "id": 1
+      "id": 2
     },
     {
       "name": "@TomluvsJerry34",
@@ -291,7 +329,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/3bajHzwSH.jpg",
@@ -304,7 +344,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/3u7.jpg",
@@ -317,7 +359,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/1v8.jpg",
@@ -330,7 +374,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/7YWnaehtI.jpg",
@@ -343,7 +389,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/C0YfrgcOD.jpg",
@@ -356,7 +404,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/at3.jpg",
@@ -369,7 +419,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/adc.jpg",
@@ -382,7 +434,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/auX58w-NL.png",
@@ -395,7 +449,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/_0Bnsj2m8.jpg",
@@ -408,10 +464,12 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@TomluvsJerry34",
+          "image": "https://static.wikia.nocookie.net/tomandjerry/images/1/16/Toms2_3_4.PNG/revision/latest?cb=20200111202627"
         }
       ],
-      "id": 2
+      "id": 3
     },
     {
       "name": "@PussinBoots99",
@@ -428,7 +486,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/e4v.jpg",
@@ -441,7 +501,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/4dm.gif",
@@ -454,7 +516,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/dlf.jpg",
@@ -467,7 +531,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/cvs.jpg",
@@ -480,7 +546,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/bo3.jpg",
@@ -493,7 +561,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/e1f.jpg",
@@ -506,7 +576,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/MTU4NTM4NA.jpg",
@@ -519,7 +591,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/1pd.jpg",
@@ -532,7 +606,9 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         },
         {
           "pic": "https://cdn2.thecatapi.com/images/nHrt_0PV3.jpg",
@@ -545,10 +621,12 @@
               "likes": 0,
               "id": 1
             }
-          ]
+          ],
+          "name": "@PussinBoots99",
+          "image": "https://static.wikia.nocookie.net/shrek/images/9/9c/PussInBootsTransparent.png/revision/latest?cb=20171218193006"
         }
       ],
-      "id": 3
+      "id": 4
     }
   ]
 }
