@@ -6,9 +6,7 @@ import { Segment, Grid, Column } from 'semantic-ui-react'
 
 import SearchSortFilter from "./SearchSortFilter"
 
-function MainPage() {
-
-  const d = new Date();
+function MainPage() 
   
     return (
       <>   
@@ -23,6 +21,6 @@ function MainPage() {
 </div>
     </>
     )
-}
+
 
 export default MainPage
