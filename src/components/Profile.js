@@ -1,19 +1,21 @@
-import { Segment } from 'semantic-ui-react'
+import { Segment } from "semantic-ui-react";
+import PostContainer from "./PostContainer";
 
-function Profile({usersData}) {
-  const {image, name, posts} = usersData[0];
-  console.log(image,name,posts)  
+function Profile({ usersData }) {
+  
+  const { posts } = usersData[0];
+  
   return (
-      <div className="ten wide column">
-          <h2 header>profile name</h2>
+    <div className="ten wide column">
+      <h2>Grumpy Cat</h2>
       <Segment>
-    <p>This will be about section with back pic and stuff</p>
+        <p>This will be about section with back pic and stuff</p>
       </Segment>
       <Segment>
-    <p> stuff goes here</p>
+        <PostContainer posts={posts}/>
       </Segment>
-      </div>
-    )
+    </div>
+  );
 }
 
-export default Profile
+export default Profile;
