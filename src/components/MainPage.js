@@ -1,6 +1,7 @@
 import PostContainer from "./PostContainer";
 import PostForm from "./PostForm";
 import NavBar from "./NavBar";
+import ProfileCover from "./ProfileCover"
 import { useState, useEffect } from "react";
 import { Segment, Grid, Column } from "semantic-ui-react";
 
@@ -21,8 +22,10 @@ function MainPage({ usersData }) {
   return (
     <>
       <div className="ten wide column">
+      <ProfileCover/>
         <Segment>
-          <h2>Welcome to CatSpace</h2>
+    
+         
           <SearchSortFilter />
         
           <PostForm />
