@@ -29,7 +29,7 @@ function App() {
               <Profile usersData={usersData}/>
             </Route>
             <Route path="/friends">
-              <Friends />
+              <Friends usersData={usersData}/>
             </Route>
             <Route path="/settings">
               <Settings />

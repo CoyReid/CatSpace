@@ -20,3 +20,7 @@ code {
   width: 60px !important;
   height: 60px !important;
 }
+
+.friendCards {
+  max-width: 225px !important;
+}

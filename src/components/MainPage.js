@@ -25,7 +25,7 @@ function MainPage({ usersData }) {
           <h2>Welcome to CatSpace</h2>
           <SearchSortFilter />
           <PostForm />
-          <PostContainer mainPagePosts={mainPagePosts} />
+          <PostContainer posts={mainPagePosts} />
         </Segment>
       </div>
     </>

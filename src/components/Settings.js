@@ -3,7 +3,7 @@ import { Segment, Grid, Column } from "semantic-ui-react";
 function Settings() {
   return (
     <div className="ten wide column">
-      <h2 header> this is settings</h2>
+      <h2> this is settings</h2>
 
       <Segment>
         <p> stuff goes here</p>
