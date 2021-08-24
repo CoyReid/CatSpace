@@ -8,6 +8,7 @@ import Profile from "./components/Profile";
 import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
+import { Segment, Grid, Column } from 'semantic-ui-react'
 
 function App() {
   
@@ -43,8 +44,9 @@ function App() {
   console.log(grumpyPosts, garfieldPosts, tomPosts, bootsPosts)
   
   return (
-    <div className="ui grid ">
-      <div column>
+    <>
+    <div className="ui main container">
+<Grid>
         <NavBar />
         <Switch>
           <Route path="/profile">
@@ -60,8 +62,10 @@ function App() {
             <MainPage />
           </Route>
         </Switch>
+ 
+      </Grid>
       </div>
-    </div>
+     </>
   );
 }
 

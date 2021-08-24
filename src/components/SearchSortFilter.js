@@ -1,7 +1,7 @@
 function SearchSortFilter() {
     return (
         <div>
-            <p>this is SeachBar</p>
+            <p>this is the searchbar</p>
         </div>
     )
 }
