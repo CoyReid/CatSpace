@@ -10,14 +10,13 @@ function MainPage() {
     return (
       <>   
    <div className="ten wide column">
-    
-   
-
+     <Segment>
             <h2 header>this is mainpage</h2>
 
             <SearchSortFilter />
             <PostForm />
             <PostContainer />
+            </Segment>
 </div>
     </>
     )
