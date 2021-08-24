@@ -1,21 +1,15 @@
 import { Segment } from 'semantic-ui-react'
 
-function Profile() {
-    return (
+function Profile({usersData}) {
+  const {image, name, posts} = usersData[0];
+  console.log(image,name,posts)  
+  return (
       <div className="ten wide column">
-          <h2 header>this is my profile</h2>
+          <h2 header>profile name</h2>
       <Segment>
-    <p> stuff goes here</p>
-   
-    <p> stuff goes here</p>
-  
-    <p> stuff goes here</p>
+    <p>This will be about section with back pic and stuff</p>
       </Segment>
       <Segment>
-    <p> stuff goes here</p>
-
-  
-    <p> stuff goes here</p>
     <p> stuff goes here</p>
       </Segment>
       </div>

@@ -1,45 +1,46 @@
 import "./App.css";
-//import {  useState, useEffect } from "react";
-import './App.css';
-import {  useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Profile from "./components/Profile";
 import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
-import { users } from "./data/db.json"
-import { Segment, Grid, Column } from 'semantic-ui-react'
+import { Segment, Grid, Column } from "semantic-ui-react";
 
 function App() {
-  
-  const [usersData, setUsersData] = useState(users);
+  const [usersData, setUsersData] = useState([{posts: ""}, {posts: ""}, {posts: ""}, {posts: ""}]);
 
-
+  useEffect(() => {
+    fetch("http://localhost:8000/users")
+      .then((r) => r.json())
+      .then((data) => {
+        setUsersData(data);
+      });
+  }, []);
 
   return (
     <>
-    <div className="ui main container">
-<Grid>
-        <NavBar />
-        <Switch>
-          <Route path="/profile">
-            <Profile />
-          </Route>
-          <Route path="/friends">
-            <Friends />
-          </Route>
-          <Route path="/settings">
-            <Settings />
-          </Route>
-          <Route exact path="/">
-            <MainPage usersData={usersData}/>
-          </Route>
-        </Switch>
- 
-      </Grid>
+      <div className="ui main container">
+        <Grid>
+          <NavBar />
+          <Switch>
+            <Route path="/profile">
+              <Profile usersData={usersData}/>
+            </Route>
+            <Route path="/friends">
+              <Friends />
+            </Route>
+            <Route path="/settings">
+              <Settings />
+            </Route>
+            <Route exact path="/">
+              <MainPage usersData={usersData}/>
+            </Route>
+          </Switch>
+        </Grid>
       </div>
-     </>
+    </>
   );
 }
 
