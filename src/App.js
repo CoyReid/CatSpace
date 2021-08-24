@@ -41,7 +41,7 @@ function App() {
     .then(data => setBootsPosts(data.posts))
   },[])
 
-  console.log(grumpyPosts, garfieldPosts, tomPosts, bootsPosts)
+  console.log(new Date())
   
   return (
     <>
