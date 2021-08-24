@@ -7,11 +7,14 @@ import { Segment, Grid, Column } from 'semantic-ui-react'
 import SearchSortFilter from "./SearchSortFilter"
 
 function MainPage() {
+
+  const d = new Date();
+  
     return (
       <>   
    <div className="ten wide column">
      <Segment>
-            <h2 header>this is mainpage</h2>
+            <h2>this is mainpage</h2>
 
             <SearchSortFilter />
             <PostForm />

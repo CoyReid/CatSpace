@@ -5,7 +5,7 @@ function PostContainer() {
     <>
     
        <Feed>
-       
+
             <PostCard />
             <p> i am a fake post</p>
             <p> i am a fake post</p>

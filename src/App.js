@@ -8,6 +8,7 @@ import Profile from "./components/Profile";
 import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
+// import DarkModeWrapper from "./components/DarkModeWrapper";
 import { Segment, Grid, Column } from 'semantic-ui-react'
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
     <>
     <div className="ui main container">
 <Grid>
+{/* <DarkModeWrapper> */}
         <NavBar />
         <Switch>
           <Route path="/profile">
@@ -62,7 +64,7 @@ function App() {
             <MainPage />
           </Route>
         </Switch>
- 
+{/* </DarkModeWrapper> */}
       </Grid>
       </div>
      </>
