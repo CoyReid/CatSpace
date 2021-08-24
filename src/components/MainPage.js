@@ -27,6 +27,7 @@ function MainPage({usersData}) {
           <h2>this is mainpage</h2>
 
           <SearchSortFilter />
+        
           <PostForm />
           <PostContainer mainPagePosts={mainPagePosts}/>
         </Segment>

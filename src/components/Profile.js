@@ -2,6 +2,7 @@ import { Segment } from 'semantic-ui-react'
 
 function Profile() {
     return (
+      
       <div className="ten wide column">
           <h2 header>this is my profile</h2>
       <Segment>
