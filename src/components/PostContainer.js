@@ -1,31 +1,13 @@
 import PostCard from "./PostCard";
 import { Segment, Grid, Column, Card, Feed } from "semantic-ui-react";
-function PostContainer() {
+function PostContainer({ mainPagePosts }) {
   return (
     <>
-    
-       <Feed>
-       
-            <PostCard />
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-            <p> i am a fake post</p>
-      
-          
-        
-            </Feed>
-    
+      <Feed>
+        {mainPagePosts.map((post) => (
+          <PostCard key={post.fact} post={post} />
+        ))}
+      </Feed>
     </>
   );
 }
