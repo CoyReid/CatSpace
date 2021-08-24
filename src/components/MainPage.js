@@ -1,18 +1,25 @@
 import PostContainer from "./PostContainer"
 import PostForm from "./PostForm"
-import { Container } from 'semantic-ui-react'
+import NavBar from "./NavBar"
+import { Segment, Grid, Column } from 'semantic-ui-react'
+
+
 import SearchSortFilter from "./SearchSortFilter"
 
 function MainPage() {
     return (
-      <>
-      <Container>
-            <p>this is mainpage</p>
+      <>   
+   <div className="ten wide column">
+    
+   
+
+            <h2 header>this is mainpage</h2>
+
             <SearchSortFilter />
             <PostForm />
             <PostContainer />
-   </Container>
-        </>
+</div>
+    </>
     )
 }
 

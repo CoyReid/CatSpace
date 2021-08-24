@@ -1,6 +1,6 @@
 function PostCard() {
     return (
-        <div>
+      <div className="card">
             <p>this is PostCard</p>
         </div>
     )
