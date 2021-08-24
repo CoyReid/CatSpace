@@ -25,6 +25,16 @@ code {
   max-width: 225px !important;
 }
 
+<<<<<<< HEAD
 .profileCover {
   max-height: 350px !important;
 }
+=======
+/* .event {
+  border: 3px !important;
+  border-color: rgb(231, 226, 226) !important;
+  border-radius: 20px !important;
+  border-style: solid !important;
+  margin-bottom: 3px !important;
+} */
+>>>>>>> 120e3322d016c97f450a5dd48205198f94a7fc19
