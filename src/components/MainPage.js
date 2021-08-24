@@ -1,6 +1,5 @@
 import PostContainer from "./PostContainer";
 import PostForm from "./PostForm";
-import NavBar from "./NavBar";
 import { useState, useEffect } from "react";
 import { Segment, Grid, Column } from "semantic-ui-react";
 
