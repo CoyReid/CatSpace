@@ -1,5 +1,5 @@
 function PostCard({post}) {
-    const {created, fact, image, name, pic, likes} = post
+    const {created, fact, image, name, pic, likes, comments} = post
     return (
     <div className="event">
       <div className="label">
@@ -24,6 +24,7 @@ function PostCard({post}) {
             <i className="like icon"></i> {likes}
           </button>
         </div>
+        <div>COMMENTS GO HERE</div>
       </div>
     </div>
   );
