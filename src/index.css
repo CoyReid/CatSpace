@@ -31,6 +31,24 @@ code {
   margin: 0px;
   
 }
+#coverphoto {
+  padding: 0px !important;
+    max-height: 250px; /* width of container */
+     /* height of container */
+    object-fit: cover !important;
+    overflow: hidden !important;
+}
+ 
+
+
+/* #coverphoto {
+  padding: 0px !important;
+  height: 220px !important;
+  width: 557px !important;
+  object-fit: scale-down !important;
+} */
+
+
 
 .profilePic {
   position: relative;
@@ -44,9 +62,7 @@ code {
  
 }
 
-#coverphoto {
-  padding: 0px !important;
-}
+
 
 .profilePicText {
   position: relative;
