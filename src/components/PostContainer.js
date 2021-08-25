@@ -1,12 +1,14 @@
 import PostCard from "./PostCard";
-import { Segment, Grid, Column, Card, Feed } from "semantic-ui-react";
-function PostContainer({posts}) {
+import { Feed } from "semantic-ui-react";
+
+function PostContainer({posts, handleLike}) {
+ 
   return (
     <>
       <Feed>
         
          {posts.map((post) => (
-             <PostCard key={post.fact} post={post}/>
+             <PostCard key={post.id} post={post} handleLike={handleLike}/>
          ))}
         
       </Feed>

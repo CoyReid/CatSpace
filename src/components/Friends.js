@@ -1,10 +1,9 @@
-import PostContainer from "./PostContainer";
 import FriendCard from "./FriendCard";
-import { Segment, Grid, Column, Card } from "semantic-ui-react";
+import { Segment, Card } from "semantic-ui-react";
 import { Route, Switch } from "react-router-dom";
 import Page from "./Page";
 
-function Friends({usersData}) {
+function Friends({usersData, handleLike}) {
   
   const friendsObjs = usersData.slice(1, 4)
 
@@ -12,7 +11,7 @@ function Friends({usersData}) {
     <div className="ten wide column">
       <Switch>
         <Route path="/friends/:id">
-          <Page />
+          <Page handleLike={handleLike}/>
         </Route>
         <Route path="/friends">
           <Segment>

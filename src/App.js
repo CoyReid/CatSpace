@@ -6,7 +6,7 @@ import Profile from "./components/Profile";
 import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
-import { Segment, Grid, Column } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 
 function App() {
   const [usersData, setUsersData] = useState([{posts: ""}, {posts: ""}, {posts: ""}, {posts: ""}]);
@@ -19,6 +19,24 @@ function App() {
       });
   }, []);
 
+  function handleLike(id, updatedPost){
+    const userObj = usersData.find((obj) => {
+      return obj.posts.find((post) => post.id === id)
+    })
+    const updatedUserPosts = userObj.posts.map((post) => post.id === id ? updatedPost : post)
+    const newUserObj = {
+      ...userObj,
+      posts: updatedUserPosts
+    }
+    fetch(`http://localhost:8000/users/${newUserObj.id}`, {
+      method: "PATCH",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(newUserObj)
+    })
+    const newUsersData = usersData.map((obj) => obj.id === newUserObj.id ? newUserObj : obj)
+    setUsersData(newUsersData)
+  }
+
   return (
     <>
       <div className="ui main container">
@@ -26,16 +44,16 @@ function App() {
           <NavBar />
           <Switch>
             <Route path="/profile">
-              <Profile usersData={usersData}/>
+              <Profile usersData={usersData} handleLike={handleLike}/>
             </Route>
             <Route path="/friends">
-              <Friends usersData={usersData}/>
+              <Friends usersData={usersData} handleLike={handleLike}/>
             </Route>
             <Route path="/settings">
               <Settings />
             </Route>
             <Route exact path="/">
-              <MainPage usersData={usersData}/>
+              <MainPage usersData={usersData} handleLike={handleLike}/>
             </Route>
           </Switch>
         </Grid>
