@@ -49,6 +49,18 @@ code {
   width: 150px
 }
 
+.sideMenu {
+  margin-top: 13px !important;
+}
+
+.logo {
+  width: 120px;
+}
+
+/* .welcome {
+  text-align: center;
+} */
+
 /* .event {
   border: 3px !important;
   border-color: rgb(231, 226, 226) !important;
