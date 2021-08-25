@@ -11,7 +11,6 @@ export default function ProfileCover() {
 
       <Item.Group>
         <Item>
-          {/* <Item.Image */}
           <img 
             className="profilePic"
             src="https://i.ibb.co/fnTcqdc/600-Grumpy.jpg"
