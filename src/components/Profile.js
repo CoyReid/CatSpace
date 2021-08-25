@@ -1,7 +1,7 @@
 import { Segment } from "semantic-ui-react";
 import PostContainer from "./PostContainer";
 
-function Profile({ usersData }) {
+function Profile({ usersData, handleLike }) {
   
   const { posts } = usersData[0];
   
@@ -12,7 +12,7 @@ function Profile({ usersData }) {
         <p>This will be about section with back pic and stuff</p>
       </Segment>
       <Segment>
-        <PostContainer posts={posts}/>
+        <PostContainer posts={posts} handleLike={handleLike}/>
       </Segment>
     </div>
   );

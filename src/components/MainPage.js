@@ -1,19 +1,17 @@
 import PostContainer from "./PostContainer";
 import PostForm from "./PostForm";
-import NavBar from "./NavBar";
 import ProfileCover from "./ProfileCover"
-import { useState, useEffect } from "react";
-import { Segment, Grid, Column } from "semantic-ui-react";
+import { Segment } from "semantic-ui-react";
 
 import SearchSortFilter from "./SearchSortFilter";
 
-function MainPage({ usersData }) {
+function MainPage({ usersData, handleLike }) {
   
-  const threeGrumpy = usersData[0].posts.slice(0, 3);
-  const threeGarf = usersData[1].posts.slice(0, 3);
-  const threeTom = usersData[2].posts.slice(0, 3);
-  const threeBoots = usersData[3].posts.slice(0, 3);
-  const mainPagePosts = [...threeGrumpy, ...threeGarf, ...threeTom,...threeBoots,].sort((a, b) => {
+  let mainPagePosts = [];
+  usersData.forEach((obj) => {
+    mainPagePosts.push(...(obj.posts.slice(0, 4)))
+  })
+  mainPagePosts.sort((a, b) => {
     let c = new Date(a.created);
     let d = new Date(b.created);
     return d - c;
@@ -29,7 +27,7 @@ function MainPage({ usersData }) {
           <SearchSortFilter />
         
           <PostForm />
-          <PostContainer posts={mainPagePosts} />
+          <PostContainer posts={mainPagePosts} handleLike={handleLike}/>
         </Segment>
       </div>
     </>

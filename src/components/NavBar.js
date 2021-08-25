@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Menu, Segment } from "semantic-ui-react";
+import { Menu } from "semantic-ui-react";
 
 function NavBar() {
   return (

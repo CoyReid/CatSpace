@@ -4,23 +4,23 @@ import { Segment } from "semantic-ui-react";
 import PostContainer from "./PostContainer";
 import ProfileCover from "./ProfileCover";
 
-function Page() {
+function Page({ handleLike }) {
   
-  const [userData, setUserData] = useState({posts: []});
+  const [friendData, setFriendData] = useState({posts: []});
 
   const id = useParams().id;
 
   useEffect(() => {
     fetch(`http://localhost:8000/users/${id}`)
     .then(r => r.json())
-    .then(data => setUserData(data))
-  },[id])
+    .then(data => setFriendData(data))
+  },[id, handleLike])
 
   return (
     <>
     <ProfileCover />
     <Segment>
-      <PostContainer posts={userData.posts}/>
+      <PostContainer posts={friendData.posts} handleLike={handleLike}/>
     </Segment>
     </>
   )
