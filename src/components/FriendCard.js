@@ -12,7 +12,6 @@ function FriendCard({ obj }) {
         />
         <Card.Content>
           <Card.Header>{name}</Card.Header>
-          <Card.Description>DESC GOES HERE</Card.Description>
         </Card.Content>
         <Card.Content extra>
             <Icon name="user" />
