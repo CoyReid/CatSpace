@@ -36,7 +36,7 @@ function MainPage({ usersData, handleLike, addPost }) {
 
   return (
     <>
-      <div className="ten wide column">
+      <div className="ten wide column ">
       <ProfileCover profileData={usersData[0]}/>
         <Segment>
           <SearchSort search={search} onSearchChange={setSearch} onSortChange={setSortBy}/>

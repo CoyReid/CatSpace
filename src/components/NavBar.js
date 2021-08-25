@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
 import { Menu } from "semantic-ui-react";
 
-function NavBar() {
+function NavBar({darkMode}) {
   return (
-    <Menu vertical size="large" className="sideMenu">
+  //  {`sidemenu ${darkMode ? "inverted" : ""}`}
+    <Menu vertical size="large" className={`sidemenu ${darkMode ? "inverted" : ""}`}>
       <div className="logoDiv">
         <img
           className="logo"
