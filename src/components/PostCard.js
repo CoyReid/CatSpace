@@ -32,6 +32,9 @@ function PostCard({ post, handleLike }) {
           >
             <i className="like icon"></i> {likes}
           </button>
+          <button className="ui tiny basic labeled icon like button"> 
+          <i className="delete icon"></i> Delete
+          </button>
         </div>
       </div>
     </div>
