@@ -77,10 +77,14 @@ code {
   align-items: center;
 }
 
-/* .event {
-  border: 3px !important;
-  border-color: rgb(231, 226, 226) !important;
-  border-radius: 20px !important;
-  border-style: solid !important;
-  margin-bottom: 3px !important;
-} */
+.sortDropdown, .sortOptions, .sortLabel {
+  color: rgb(196, 192, 192);
+  font: 'Helvetica Neue';
+}
+
+.sortDropdown {
+  border-color: rgb(226, 223, 223);
+  border-radius: 5px;
+}
+
+

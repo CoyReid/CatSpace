@@ -5,6 +5,12 @@ import ProfileCover from "./ProfileCover";
 function Profile({ usersData, handleLike }) {
   
   const { posts } = usersData[0];
+
+  posts.sort((a, b) => {
+    let c = new Date(a.created);
+    let d = new Date(b.created);
+    return d - c;
+  })
   
   return (
     <div className="ten wide column">

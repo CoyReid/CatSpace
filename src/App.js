@@ -37,6 +37,11 @@ function App() {
     setUsersData(newUsersData)
   }
 
+  function addPost(newUserObj){
+    const newUsersData = usersData.map((obj) => obj.id === newUserObj.id ? newUserObj : obj)
+    setUsersData(newUsersData)
+  }
+
   return (
     <>
       <div className="ui main container">
@@ -53,7 +58,7 @@ function App() {
               <Settings />
             </Route>
             <Route exact path="/">
-              <MainPage usersData={usersData} handleLike={handleLike}/>
+              <MainPage usersData={usersData} handleLike={handleLike} addPost={addPost}/>
             </Route>
           </Switch>
         </Grid>

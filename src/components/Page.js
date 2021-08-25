@@ -20,7 +20,10 @@ function Page({ handleLike }) {
     <>
     <ProfileCover profileData={friendData}/>
     <Segment>
-      <PostContainer posts={friendData.posts} handleLike={handleLike}/>
+      <PostContainer posts={friendData.posts.sort((a, b) => {
+        let c = new Date(a.created);
+        let d = new Date(b.created);
+        return d - c;})} handleLike={handleLike}/>
     </Segment>
     </>
   )
