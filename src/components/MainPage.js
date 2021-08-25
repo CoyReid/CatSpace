@@ -1,11 +1,11 @@
 import PostContainer from "./PostContainer";
 import PostForm from "./PostForm";
 import ProfileCover from "./ProfileCover"
-import { Segment } from "semantic-ui-react";
+import { Segment, Button, Grid } from "semantic-ui-react";
 import SearchSort from "./SearchSort";
 import { useState } from "react";
 
-function MainPage({ usersData, handleLike, addPost }) {
+function MainPage({ usersData, handleLike, addPost , postShow, setPostShow}) {
   
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState("All");
@@ -40,7 +40,12 @@ function MainPage({ usersData, handleLike, addPost }) {
       <ProfileCover profileData={usersData[0]}/>
         <Segment>
           <SearchSort search={search} onSearchChange={setSearch} onSortChange={setSortBy}/>
-          <PostForm usersData={usersData} addPost={addPost}/>
+          <Grid>
+            <Grid.Column textAlign="center">
+              <Button onClick={() => setPostShow(!postShow)}>{postShow? "Hide Post Form" : "Show Post Form"}</Button>
+            </Grid.Column>
+          </Grid>
+          {postShow ? <PostForm usersData={usersData} addPost={addPost}/> : null}
           <PostContainer posts={searchedPosts} handleLike={handleLike}/>
         </Segment>
       </div>

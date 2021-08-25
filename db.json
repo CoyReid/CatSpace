@@ -2,6 +2,8 @@
   "users": [
     {
       "name": "@Grumpy211",
+      "displayname": "Grumpy the Cat",
+      "description": "Don't talk to me",
       "image": "https://i.ibb.co/fnTcqdc/600-Grumpy.jpg",
       "coverpic": "https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "posts": [
@@ -179,6 +181,8 @@
     },
     {
       "name": "@GarfieldLasagna9",
+      "displayname": "Garfield",
+      "description": "I hate mondays",
       "image": "https://i.ibb.co/41Ys3TK/600-Garfield.jpg",
       "coverpic": "https://i.ibb.co/ChjQv4t/cover-Garfield.jpg",
       "posts": [
@@ -347,6 +351,8 @@
     },
     {
       "name": "@TomluvsJerry34",
+      "displayname": "Tom the Cat",
+      "description": "Jerry did it",
       "image": "https://i.ibb.co/fdgk2gS/600Tom.jpg",
       "coverpic": "https://i.ibb.co/WFBqbDt/covertom.jpg",
       "posts": [
@@ -515,6 +521,8 @@
     },
     {
       "name": "@PussinBoots99",
+      "displayname": "Puss in Boots",
+      "description": "EN GARDE!",
       "image": "https://i.ibb.co/XVJ0N4d/600puss.jpg",
       "coverpic": "https://i.ibb.co/xC7H9mm/600pib.jpg",
       "posts": [

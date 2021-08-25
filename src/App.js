@@ -12,6 +12,7 @@ import DarkModeWrapper from "./components/DarkModeWrapper.js";
 function App() {
   const [usersData, setUsersData] = useState([{posts: ""}, {posts: ""}, {posts: ""}, {posts: ""}]);
   const [darkMode, setDarkMode] = useState(false);
+  const [postShow, setPostShow] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:8000/users")
@@ -39,7 +40,7 @@ function App() {
     setUsersData(newUsersData)
   }
 
-  function addPost(newUserObj){
+  function updateData(newUserObj){
     const newUsersData = usersData.map((obj) => obj.id === newUserObj.id ? newUserObj : obj)
     setUsersData(newUsersData)
   }
@@ -59,10 +60,11 @@ function App() {
               <Friends usersData={usersData} handleLike={handleLike}/>
             </Route>
             <Route path="/settings">
-              <Settings darkMode = {darkMode} setDarkMode = {setDarkMode}/>
+              <Settings usersData={usersData} updateSettings={updateData} 
+              darkMode = {darkMode} setDarkMode = {setDarkMode}/>
             </Route>
             <Route exact path="/">
-              <MainPage usersData={usersData} handleLike={handleLike} addPost={addPost}/>
+              <MainPage usersData={usersData} handleLike={handleLike} addPost={updateData} postShow={postShow} setPostShow={setPostShow}/>
             </Route>
           </Switch>
          
