@@ -1,5 +1,5 @@
 function PostCard({ post, handleLike }) {
-  const { created, fact, image, name, pic, likes, comments } = post;
+  const { created, fact, image, name, pic, likes } = post;
   
   function handleClick(){
     const updatedPost = {

@@ -1,4 +1,4 @@
-import { Segment, Grid, Column } from "semantic-ui-react";
+import { Segment } from "semantic-ui-react";
 
 function Settings() {
   return (
