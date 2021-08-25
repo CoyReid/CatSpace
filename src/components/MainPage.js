@@ -43,7 +43,7 @@ function MainPage({ usersData, handleLike, addPost , postShow, setPostShow}) {
           <SearchSort search={search} onSearchChange={setSearch} onSortChange={setSortBy}/>
           <Grid>
             <Grid.Column textAlign="center">
-              <Button onClick={() => setPostShow(!postShow)}>{postShow? "Hide Post Form" : "Show Post Form"}</Button>
+              <Button className="formbtn" onClick={() => setPostShow(!postShow)}>{postShow? "Hide Post Form" : "Show Post Form"}</Button>
             </Grid.Column>
           </Grid>
           {postShow ? <PostForm usersData={usersData} addPost={addPost}/> : null}
