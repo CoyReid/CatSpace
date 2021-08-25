@@ -7,9 +7,11 @@ import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
 import { Grid } from "semantic-ui-react";
+import DarkModeWrapper from "./components/DarkModeWrapper.js";
 
 function App() {
   const [usersData, setUsersData] = useState([{posts: ""}, {posts: ""}, {posts: ""}, {posts: ""}]);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:8000/users")
@@ -45,8 +47,10 @@ function App() {
   return (
     <>
       <div className="ui main container">
+      <DarkModeWrapper darkMode={darkMode}>
         <Grid>
-          <NavBar />
+  
+          <NavBar darkMode = {darkMode} setDarkMode = {setDarkMode} />
           <Switch>
             <Route path="/profile">
               <Profile usersData={usersData} handleLike={handleLike}/>
@@ -55,13 +59,15 @@ function App() {
               <Friends usersData={usersData} handleLike={handleLike}/>
             </Route>
             <Route path="/settings">
-              <Settings />
+              <Settings darkMode = {darkMode} setDarkMode = {setDarkMode}/>
             </Route>
             <Route exact path="/">
               <MainPage usersData={usersData} handleLike={handleLike} addPost={addPost}/>
             </Route>
           </Switch>
+         
         </Grid>
+        </DarkModeWrapper>
       </div>
     </>
   );

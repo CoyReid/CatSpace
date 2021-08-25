@@ -10,7 +10,7 @@ function PostCard({ post, handleLike }) {
   }
   
   return (
-    <div className="event">
+    <div className="event" >
       <div className="label">
         <img
           className="tinyIcon"
@@ -23,8 +23,8 @@ function PostCard({ post, handleLike }) {
           {name}
           <div className="date">{created}</div>
         </div>
-        <img className="postPic" src={pic} alt="A user's personal post" />
-        <div className="extra text">{fact}</div>
+        <img id="postPic" src={pic} alt="A user's personal post"  className="ui fluid image"/>
+         <div className="extra text">{fact}</div>
         <div className="meta">
           <button
             onClick={handleClick}

@@ -7,6 +7,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dark-mode {
+  color: white;
+
+}
+
+.dark-mode .ui.segment, 
+.dark-mode .ui.feed,
+.dark-mode .ui.card, 
+.dark-mode .ui.cards>.card {
+  background-color: #333;
+  color: white !important;
+}
+
+.dark-mode .ui.feed>.event>.content .summary,
+.dark-mode .ui.feed>.event>.content .extra.text,
+.dark-mode .ui.cards>.card>.content>.header,
+.dark-mode .ui.cards>.card>.content>.description {
+  color: white !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -114,8 +134,21 @@ code {
 
 /* PostCard Component */
 
-.postPic {
+#postPic {
   border-radius: 25px;
   /* margin: auto;
   display: block; */
+  max-width: 400px;
+  
+ object-fit: cover !important;
+ overflow: hidden !important;
+}
+
+#postContent{
+  overflow-wrap: break-word; 
+}
+
+.postTextBox{
+  inline-size: 400px; 
+  overflow: hidden;
 }
