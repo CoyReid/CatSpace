@@ -41,8 +41,8 @@ function Settings({darkMode, setDarkMode, usersData, updateSettings}) {
   
   return (
     <div className="ten wide column">
-      <h2>Settings</h2>
       <Segment>
+      <h2>Settings</h2>
         <Form onSubmit={handleSubmit}>
           <Form.Input
             label="Edit Profile Photo"
