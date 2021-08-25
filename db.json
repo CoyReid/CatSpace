@@ -5,7 +5,7 @@
       "displayname": "Grumpy the Cat",
       "description": "Don't talk to me",
       "image": "https://i.ibb.co/fnTcqdc/600-Grumpy.jpg",
-      "coverpic": "https://images.pexels.com/photos/268941/pexels-photo-268941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "coverpic": "https://static.dw.com/image/18463014_101.jpg",
       "posts": [
         {
           "pic": "https://cdn2.thecatapi.com/images/bg4.jpg",
@@ -99,7 +99,7 @@
         {
           "pic": "https://cdn2.thecatapi.com/images/MTU0NzEwOA.jpg",
           "fact": "When a cat drinks, its tongue - which has tiny barbs on it - scoops the liquid up backwards.",
-          "likes": 1,
+          "likes": 3,
           "created": "Sat Aug 21 2021 16:20:52 GMT-0500 (Central Daylight Time)",
           "comments": [
             {
@@ -205,7 +205,7 @@
         {
           "pic": "https://cdn2.thecatapi.com/images/1n6.jpg",
           "fact": "The cat's tail is used to maintain balance.",
-          "likes": 7,
+          "likes": 8,
           "created": "Tue Aug 24 2021 05:57:16 GMT-0500 (Central Daylight Time)",
           "comments": [
             {
