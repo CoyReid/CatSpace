@@ -1,5 +1,6 @@
 import { Segment } from "semantic-ui-react";
 import PostContainer from "./PostContainer";
+import ProfileCover from "./ProfileCover";
 
 function Profile({ usersData, handleLike }) {
   
@@ -7,10 +8,7 @@ function Profile({ usersData, handleLike }) {
   
   return (
     <div className="ten wide column">
-      <h2>Grumpy Cat</h2>
-      <Segment>
-        <p>This will be about section with back pic and stuff</p>
-      </Segment>
+      <ProfileCover profileData={usersData[0]}/>
       <Segment>
         <PostContainer posts={posts} handleLike={handleLike}/>
       </Segment>

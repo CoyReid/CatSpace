@@ -18,7 +18,7 @@ function Page({ handleLike }) {
 
   return (
     <>
-    <ProfileCover />
+    <ProfileCover profileData={friendData}/>
     <Segment>
       <PostContainer posts={friendData.posts} handleLike={handleLike}/>
     </Segment>

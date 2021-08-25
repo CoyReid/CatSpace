@@ -20,7 +20,7 @@ function MainPage({ usersData, handleLike }) {
   return (
     <>
       <div className="ten wide column">
-      <ProfileCover/>
+      <ProfileCover profileData={usersData[0]}/>
         <Segment>
     
          
