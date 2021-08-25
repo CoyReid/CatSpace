@@ -28,6 +28,27 @@ code {
 .profileCover {
   max-height: 350px !important;
 }
+
+.profilePic {
+  position: relative;
+  left: 10px;
+  top: -125px;
+  max-width: 130px !important;
+  padding: 0px !important;
+  margin: 0px !important;
+  border: 3px solid white !important;
+  border-radius: 50%;
+  
+}
+
+.profilePicText {
+  position: absolute;
+  left: 35px;
+  top: 300px;
+  padding: 5px;
+  width: 150px
+}
+
 /* .event {
   border: 3px !important;
   border-color: rgb(231, 226, 226) !important;
