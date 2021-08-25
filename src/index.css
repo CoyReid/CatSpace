@@ -53,13 +53,29 @@ code {
   margin-top: 13px !important;
 }
 
+.logoDiv {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+
+}
 .logo {
-  width: 120px;
+  justify-content: left;
+  align-items: center;
+  max-height: 90px;
+  margin-left: -20px;
+
 }
 
-/* .welcome {
-  text-align: center;
-} */
+.logo:hover{
+  filter: hue-rotate(100deg);
+-webkit-filter: hue-rotate(80deg);
+}
+
+.welcome {
+  justify-content: left;
+  align-items: center;
+}
 
 /* .event {
   border: 3px !important;
