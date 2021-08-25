@@ -32,6 +32,14 @@ code {
     monospace;
 }
 
+
+/* side navigation menu */
+.sideMenu {
+  margin-top: 13px !important;
+  position: fixed;
+}
+
+
 .postPic {
   width: 350px;
 }
@@ -91,10 +99,6 @@ code {
   top: -10px;
   padding: 5px;
   width: 150px;
-}
-
-.sideMenu {
-  margin-top: 13px !important;
 }
 
 .logoDiv {

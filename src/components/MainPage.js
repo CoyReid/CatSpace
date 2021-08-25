@@ -36,7 +36,8 @@ function MainPage({ usersData, handleLike, addPost , postShow, setPostShow}) {
 
   return (
     <>
-      <div className="ten wide column ">
+      {/* <div className="ten wide column "> */}
+      <Grid.Column width={10}>
       <ProfileCover profileData={usersData[0]}/>
         <Segment>
           <SearchSort search={search} onSearchChange={setSearch} onSortChange={setSortBy}/>
@@ -48,7 +49,8 @@ function MainPage({ usersData, handleLike, addPost , postShow, setPostShow}) {
           {postShow ? <PostForm usersData={usersData} addPost={addPost}/> : null}
           <PostContainer posts={searchedPosts} handleLike={handleLike}/>
         </Segment>
-      </div>
+        </Grid.Column>
+      {/* </div> */}
     </>
   );
 }
