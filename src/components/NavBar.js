@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { Grid, Menu, Sticky } from "semantic-ui-react";
+import { Grid, Menu } from "semantic-ui-react";
 
 function NavBar({ darkMode }) {
   return (
     <Grid.Column width={4}>
-      
       <Menu
+        id="navmenu"
         vertical
         size="large"
         className={`sidemenu ${darkMode ? "inverted" : ""}`}
@@ -32,8 +32,8 @@ function NavBar({ darkMode }) {
           Settings
         </Menu.Item>
       </Menu>
-    
     </Grid.Column>
+    
   );
 }
 

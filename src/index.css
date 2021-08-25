@@ -54,7 +54,7 @@ code {
 }
 
 .profileCover {
-  max-height: 350px !important;
+  max-height: 355px !important;
   padding: 0px;
   margin: 0px;
   
@@ -67,22 +67,11 @@ code {
     overflow: hidden !important;
     border-radius: 10px 50px
 }
- 
-
-
-/* #coverphoto {
-  padding: 0px !important;
-  height: 220px !important;
-  width: 557px !important;
-  object-fit: scale-down !important;
-} */
-
-
 
 .profilePic {
   position: relative;
   left: 20px;
-  top: -140px;
+  top: -105px;
   max-width: 130px !important;
   padding: 0px !important;
   margin: 0px !important;
@@ -91,14 +80,22 @@ code {
  
 }
 
-
-
 .profilePicText {
   position: relative;
   left: -110px;
-  top: -10px;
+  top: 24px;
   padding: 5px;
   width: 150px;
+}
+
+.displayprofile {
+  position: relative;
+  left: -110px;
+  top: 16px;
+  padding: 5px;
+  width: 150px;
+  margin-top: -2px;
+  line-height: 3px;
 }
 
 .logoDiv {
@@ -125,7 +122,7 @@ code {
   align-items: center;
 }
 
-.sortDropdown, .sortOptions, .sortLabel {
+.sortDropdown, .sortLabel, .searchBar, .sortOptions, .formBtn {
   color: rgb(196, 192, 192);
   font: 'Helvetica Neue';
 }
@@ -155,4 +152,8 @@ code {
 .postTextBox{
   inline-size: 400px; 
   overflow: hidden;
+}
+
+#navmenu {
+  position: sticky !important;
 }
