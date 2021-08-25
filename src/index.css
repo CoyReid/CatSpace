@@ -27,26 +27,31 @@ code {
 
 .profileCover {
   max-height: 350px !important;
+  padding: 0px;
+  margin: 0px;
 }
 
 .profilePic {
   position: relative;
-  left: 10px;
-  top: -125px;
+  left: 20px;
+  top: -140px;
   max-width: 130px !important;
   padding: 0px !important;
   margin: 0px !important;
   border: 3px solid white !important;
   border-radius: 50%;
-  
+}
+
+#coverphoto {
+  padding: 0px !important;
 }
 
 .profilePicText {
-  position: absolute;
-  left: 35px;
-  top: 300px;
+  position: relative;
+  left: -110px;
+  top: -10px;
   padding: 5px;
-  width: 150px
+  width: 150px;
 }
 
 .sideMenu {

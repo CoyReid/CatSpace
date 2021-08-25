@@ -1,12 +1,13 @@
 import { Segment, Item } from "semantic-ui-react";
 export default function ProfileCover({ profileData }) {
-  const { name, image } = profileData;
+  const { name, image, coverpic } = profileData;
 
   return (
-    <Segment className="profileCover" raised>
+    <Segment className="profileCover">
       <img
         className="ui fluid image"
-        src="https://live.staticflickr.com/4250/34389735790_9045d855bc_o.jpg"
+        id = "coverphoto"
+        src={coverpic}
         size="large"
         alt="a cat in wide view"
       />
