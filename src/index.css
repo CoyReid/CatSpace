@@ -34,9 +34,13 @@ code {
 
 
 /* side navigation menu */
+
+
+
 .sideMenu {
   margin-top: 13px !important;
-  position: fixed;
+  position: sticky;
+  display: flex;
 }
 
 

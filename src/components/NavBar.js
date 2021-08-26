@@ -1,7 +1,9 @@
-import { NavLink } from "react-router-dom";
-import { Grid, Menu, Sticky } from "semantic-ui-react";
+import { NavLink,  } from "react-router-dom";
+
+import { Grid, Menu, Sticky, Rail} from "semantic-ui-react";
 
 function NavBar({ darkMode }) {
+
   return (
     <Grid.Column width={4}>
       
@@ -32,6 +34,7 @@ function NavBar({ darkMode }) {
           Settings
         </Menu.Item>
       </Menu>
+     
     
     </Grid.Column>
   );

@@ -6,7 +6,7 @@ import Profile from "./components/Profile";
 import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
-import { Grid } from "semantic-ui-react";
+import { Grid, Sticky } from "semantic-ui-react";
 import DarkModeWrapper from "./components/DarkModeWrapper.js";
 
 function App() {
@@ -50,8 +50,8 @@ function App() {
       <div className="ui main container">
       <DarkModeWrapper darkMode={darkMode}>
         <Grid>
- 
-          <NavBar darkMode = {darkMode} setDarkMode = {setDarkMode} />
+
+          <NavBar className=".ui.sticky" darkMode = {darkMode} setDarkMode = {setDarkMode} />
           <Switch>
             <Route path="/profile">
               <Profile usersData={usersData} handleLike={handleLike}/>
@@ -67,7 +67,7 @@ function App() {
               <MainPage usersData={usersData} handleLike={handleLike} addPost={updateData} postShow={postShow} setPostShow={setPostShow}/>
             </Route>
           </Switch>
-     
+  
         </Grid>
         </DarkModeWrapper>
       </div>
