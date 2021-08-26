@@ -6,7 +6,7 @@ import Profile from "./components/Profile";
 import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
-import { Grid, Sticky } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import DarkModeWrapper from "./components/DarkModeWrapper.js";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     { posts: "" },
     { posts: "" },
   ]);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [postShow, setPostShow] = useState(false);
 
   useEffect(() => {
@@ -64,10 +64,10 @@ function App() {
             <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
             <Switch>
               <Route path="/profile">
-                <Profile usersData={usersData} handleLike={handleLike} addPost={updateData} postShow={postShow} setPostShow={setPostShow}/>
+                <Profile usersData={usersData} handleLike={handleLike} addPost={updateData} postShow={postShow} setPostShow={setPostShow} darkMode = {darkMode}/>
               </Route>
               <Route path="/friends">
-                <Friends usersData={usersData} handleLike={handleLike} />
+                <Friends usersData={usersData} handleLike={handleLike} darkMode = {darkMode} />
               </Route>
               <Route path="/settings">
                 <Settings
@@ -84,6 +84,7 @@ function App() {
                   addPost={updateData}
                   postShow={postShow}
                   setPostShow={setPostShow}
+                  darkMode = {darkMode}
                 />
               </Route>
             </Switch>

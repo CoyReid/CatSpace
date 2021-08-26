@@ -3,7 +3,7 @@ import PostContainer from "./PostContainer";
 import ProfileCover from "./ProfileCover";
 import PostForm from "./PostForm";
 
-function Profile( { usersData, handleLike, addPost , postShow, setPostShow} ) {
+function Profile( { usersData, handleLike, addPost , postShow, setPostShow, darkMode} ) {
   
   const { posts } = usersData[0];
 
@@ -19,11 +19,11 @@ function Profile( { usersData, handleLike, addPost , postShow, setPostShow} ) {
       <Segment>
            <Grid>
             <Grid.Column textAlign="center">
-              <Button className="formbtn" onClick={() => setPostShow(!postShow)}>{postShow? "Hide Post Form" : "Show Post Form"}</Button>
+              <Button className="formbtn blue" onClick={() => setPostShow(!postShow)}>{postShow? "Close" : "Write something!"}</Button>
             </Grid.Column>
           </Grid>
           {postShow ? <PostForm usersData={usersData} addPost={addPost}/> : null}
-        <PostContainer posts={posts} handleLike={handleLike}/>
+        <PostContainer posts={posts} handleLike={handleLike} darkMode = {darkMode}/>
       </Segment>
     </div>
   );

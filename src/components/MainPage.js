@@ -5,7 +5,9 @@ import { Segment, Button, Grid } from "semantic-ui-react";
 import SearchSort from "./SearchSort";
 import { useState } from "react";
 
-function MainPage({ usersData, handleLike, addPost , postShow, setPostShow}) {
+function MainPage({ usersData, handleLike, addPost , postShow, setPostShow, darkMode}) {
+
+  console.log("main", darkMode)
   
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState("all");
@@ -43,11 +45,11 @@ function MainPage({ usersData, handleLike, addPost , postShow, setPostShow}) {
           <SearchSort search={search} onSearchChange={setSearch} onSortChange={setSortBy}/>
           <Grid>
             <Grid.Column textAlign="center">
-              <Button color="blue" onClick={() => setPostShow(!postShow)}>{postShow? "Hide Post Form" : "Write Something!"}</Button>
+              <Button color="blue" onClick={() => setPostShow(!postShow)}>{postShow? "Close" : "Write Something!"}</Button>
             </Grid.Column>
           </Grid>
           {postShow ? <PostForm usersData={usersData} addPost={addPost}/> : null}
-          <PostContainer posts={searchedPosts} handleLike={handleLike}/>
+          <PostContainer darkMode={darkMode} posts={searchedPosts} handleLike={handleLike}/>
         </Segment>
         </Grid.Column>
       {/* </div> */}
