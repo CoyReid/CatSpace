@@ -10,7 +10,12 @@ import { Grid } from "semantic-ui-react";
 import DarkModeWrapper from "./components/DarkModeWrapper.js";
 
 function App() {
-  const [usersData, setUsersData] = useState([{posts: ""}, {posts: ""}, {posts: ""}, {posts: ""}]);
+  const [usersData, setUsersData] = useState([
+    { posts: "" },
+    { posts: "" },
+    { posts: "" },
+    { posts: "" },
+  ]);
   const [darkMode, setDarkMode] = useState(false);
   const [postShow, setPostShow] = useState(false);
 
@@ -22,52 +27,67 @@ function App() {
       });
   }, []);
 
-  function handleLike(id, updatedPost){
+  function handleLike(id, updatedPost) {
     const userObj = usersData.find((obj) => {
-      return obj.posts.find((post) => post.id === id)
-    })
-    const updatedUserPosts = userObj.posts.map((post) => post.id === id ? updatedPost : post)
+      return obj.posts.find((post) => post.id === id);
+    });
+    const updatedUserPosts = userObj.posts.map((post) =>
+      post.id === id ? updatedPost : post
+    );
     const newUserObj = {
       ...userObj,
-      posts: updatedUserPosts
-    }
+      posts: updatedUserPosts,
+    };
     fetch(`http://localhost:8000/users/${newUserObj.id}`, {
       method: "PATCH",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(newUserObj)
-    })
-    const newUsersData = usersData.map((obj) => obj.id === newUserObj.id ? newUserObj : obj)
-    setUsersData(newUsersData)
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(newUserObj),
+    });
+    const newUsersData = usersData.map((obj) =>
+      obj.id === newUserObj.id ? newUserObj : obj
+    );
+    setUsersData(newUsersData);
   }
 
-  function updateData(newUserObj){
-    const newUsersData = usersData.map((obj) => obj.id === newUserObj.id ? newUserObj : obj)
-    setUsersData(newUsersData)
+  function updateData(newUserObj) {
+    const newUsersData = usersData.map((obj) =>
+      obj.id === newUserObj.id ? newUserObj : obj
+    );
+    setUsersData(newUsersData);
   }
 
   return (
     <>
       <div className="ui main container">
-      <DarkModeWrapper darkMode={darkMode}>
-        <Grid>
-            <NavBar darkMode = {darkMode} setDarkMode = {setDarkMode} />
-          <Switch>
-            <Route path="/profile">
-              <Profile usersData={usersData} handleLike={handleLike}/>
-            </Route>
-            <Route path="/friends">
-              <Friends usersData={usersData} handleLike={handleLike}/>
-            </Route>
-            <Route path="/settings">
-              <Settings usersData={usersData} updateSettings={updateData} 
-              darkMode = {darkMode} setDarkMode = {setDarkMode}/>
-            </Route>
-            <Route exact path="/">
-              <MainPage usersData={usersData} handleLike={handleLike} addPost={updateData} postShow={postShow} setPostShow={setPostShow}/>
-            </Route>
-          </Switch>
-     
-        </Grid>
+        <DarkModeWrapper darkMode={darkMode}>
+          <Grid>
+            <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+            <Switch>
+              <Route path="/profile">
+                <Profile usersData={usersData} handleLike={handleLike} addPost={updateData} postShow={postShow} setPostShow={setPostShow}/>
+              </Route>
+              <Route path="/friends">
+                <Friends usersData={usersData} handleLike={handleLike} />
+              </Route>
+              <Route path="/settings">
+                <Settings
+                  usersData={usersData}
+                  updateSettings={updateData}
+                  darkMode={darkMode}
+                  setDarkMode={setDarkMode}
+                />
+              </Route>
+              <Route exact path="/">
+                <MainPage
+                  usersData={usersData}
+                  handleLike={handleLike}
+                  addPost={updateData}
+                  postShow={postShow}
+                  setPostShow={setPostShow}
+                />
+              </Route>
+            </Switch>
+          </Grid>
         </DarkModeWrapper>
       </div>
     </>

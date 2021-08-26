@@ -1,14 +1,15 @@
 import { NavLink } from "react-router-dom";
-import { Grid, Menu } from "semantic-ui-react";
+import { Grid, Menu, Icon } from "semantic-ui-react";
 
 function NavBar({ darkMode }) {
   return (
-    <Grid.Column width={4}>
+    <Grid.Column width={3} >
       <Menu
-        id="navmenu"
+        fixed="left"
         vertical
         size="large"
         className={`sidemenu ${darkMode ? "inverted" : ""}`}
+        id="sidemenu"
       >
         <div className="logoDiv">
           <img
@@ -19,21 +20,24 @@ function NavBar({ darkMode }) {
           <h3 className="welcome">Welcome to CatSpace</h3>
         </div>
 
-        <Menu.Item as={NavLink} to="/">
-          Main Page
+        <Menu.Item as={NavLink} to="/" exact={true} className="menuItems">
+            <Icon name="home" className="menuIcons"/>
+            Main Page
         </Menu.Item>
-        <Menu.Item as={NavLink} to="/profile">
+        <Menu.Item as={NavLink} to="/profile" className="menuItems">
+        <Icon name="user" className="menuIcons"/>
           Profile
         </Menu.Item>
-        <Menu.Item as={NavLink} to="/friends">
+        <Menu.Item as={NavLink} to="/friends" className="menuItems">
+        <Icon name="users" className="menuIcons"/>
           Friends
         </Menu.Item>
-        <Menu.Item as={NavLink} to="/settings">
+        <Menu.Item as={NavLink} to="/settings" className="menuItems">
+        <Icon name="settings" className="menuIcons"/>
           Settings
         </Menu.Item>
       </Menu>
     </Grid.Column>
-    
   );
 }
 

@@ -12,10 +12,10 @@ function FriendCard({ obj }) {
         />
         <Card.Content>
           <Card.Header>{name}</Card.Header>
-          <Card.Description>{description}</Card.Description>
+          <Card.Description>"{description}"</Card.Description>
         </Card.Content>
         <Card.Content extra>
-            <Icon name="user" />
+            <Icon name="user" className="friendCardIcons"/>
             3 Friends
         </Card.Content>
       </Card>
