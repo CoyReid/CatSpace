@@ -9,10 +9,11 @@ body {
 
 #root {
   background: url("https://i.pinimg.com/originals/8e/9f/6a/8e9f6af862587056fcc1ae8d19ac2384.jpg") !important;
-  background-size: cover !important;
+  background-size: contain !important;
   background-attachment: fixed !important;
   margin-top: -10px !important;
   height: 2300vh !important;
+  margin-left: 150px !important;
 }
 
 .dark-mode {

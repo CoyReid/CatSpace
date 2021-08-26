@@ -56,6 +56,11 @@ function App() {
     setUsersData(newUsersData);
   }
 
+  function handleAddFriend(newUserData) {
+    const newUsersData = [...usersData, newUserData]
+    setUsersData(newUsersData)
+  }
+
   return (
     <>
       <div className="ui main container">
@@ -67,7 +72,7 @@ function App() {
                 <Profile usersData={usersData} handleLike={handleLike} addPost={updateData} postShow={postShow} setPostShow={setPostShow} darkMode = {darkMode}/>
               </Route>
               <Route path="/friends">
-                <Friends usersData={usersData} handleLike={handleLike} darkMode = {darkMode} />
+                <Friends usersData={usersData} handleLike={handleLike} handleAddFriend={handleAddFriend} darkMode={darkMode}/>
               </Route>
               <Route path="/settings">
                 <Settings
@@ -96,6 +101,8 @@ function App() {
 }
 
 export default App;
+
+
 
 //This is all for fetching from API's to make random set of 10 posts
 
