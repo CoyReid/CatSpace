@@ -1,7 +1,7 @@
 import { Card, Icon, Image } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 
-function FriendCard({ obj }) {
+function FriendCard({ obj, usersData }) {
   const {name, image, id, description} = obj;
 
   let path = `/friends/${id}`;
@@ -16,7 +16,7 @@ function FriendCard({ obj }) {
         </Card.Content>
         <Card.Content extra>
             <Icon name="user" className="friendCardIcons"/>
-            3 Friends
+            {`${usersData.length - 1} Friends`}
         </Card.Content>
       </Card>
   );
