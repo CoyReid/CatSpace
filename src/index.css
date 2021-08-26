@@ -15,6 +15,10 @@ body {
   margin-top: -10px !important;
   /* height: 2300vh !important; */
   margin-left: 150px !important;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: auto;
+  image-rendering: smooth;
+
 }
 
 .dark-mode {
@@ -109,7 +113,7 @@ code {
   max-width: 125px !important;
   padding: 0px !important;
   margin: 0px !important;
-  border: 3px solid white !important;
+  border: 3px solid rgb(196, 192, 192)!important;
   border-radius: 50%;
  
 }
