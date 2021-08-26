@@ -28,7 +28,7 @@ function PostCard({ post, handleLike, darkMode }) {
          <div className="extra text">{fact}</div>
         <div className="meta">
           <button
-          className={`ui tiny basic labeled icon like button ${darkMode ? "inverted" : ""}`}
+          className={`ui tiny basic labeled icon like button  ${darkMode ? "inverted" : ""}`}
             onClick={handleClick}
             // className="ui tiny basic labeled icon like button inverted"
           //  {{darkMode} ? {className="ui tiny basic labeled icon like button "} : {className="ui tiny basic labeled icon like button inverted"}}

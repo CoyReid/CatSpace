@@ -62,7 +62,7 @@ function PostForm({ usersData, addPost }) {
             onChange={handleChange}
             name="pic"
           />
-          <Button type="submit">Meow</Button>
+          <Button color="violet" type="submit">Meow</Button>
         </Form>
       </Segment>
     </div>

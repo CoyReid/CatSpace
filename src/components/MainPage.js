@@ -45,7 +45,7 @@ function MainPage({ usersData, handleLike, addPost , postShow, setPostShow, dark
           <SearchSort search={search} onSearchChange={setSearch} onSortChange={setSortBy}/>
           <Grid>
             <Grid.Column textAlign="center">
-              <Button color="blue" onClick={() => setPostShow(!postShow)}>{postShow? "Close" : "Write Something!"}</Button>
+              <Button color="violet" onClick={() => setPostShow(!postShow)}>{postShow? "Close" : "Write Something!"}</Button>
             </Grid.Column>
           </Grid>
           {postShow ? <PostForm usersData={usersData} addPost={addPost}/> : null}

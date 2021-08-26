@@ -19,7 +19,7 @@ function Profile( { usersData, handleLike, addPost , postShow, setPostShow, dark
       <Segment>
            <Grid>
             <Grid.Column textAlign="center">
-              <Button className="formbtn blue" onClick={() => setPostShow(!postShow)}>{postShow? "Close" : "Write something!"}</Button>
+              <Button className="formbtn violet" onClick={() => setPostShow(!postShow)}>{postShow? "Close" : "Write something!"}</Button>
             </Grid.Column>
           </Grid>
           {postShow ? <PostForm usersData={usersData} addPost={addPost}/> : null}

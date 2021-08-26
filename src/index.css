@@ -8,11 +8,12 @@ body {
 }
 
 #root {
-  background: url("https://i.pinimg.com/originals/8e/9f/6a/8e9f6af862587056fcc1ae8d19ac2384.jpg") !important;
-  background-size: contain !important;
+  background: url("https://live.staticflickr.com/65535/51404514236_81bdcaf4a1_h.jpg") !important;
+  background-size: cover !important;
+  /* background-repeat: !important; */
   background-attachment: fixed !important;
   margin-top: -10px !important;
-  height: 2300vh !important;
+  /* height: 2300vh !important; */
   margin-left: 150px !important;
 }
 
@@ -48,6 +49,9 @@ body {
   color: #f8f8ff !important;
 }
 
+.dark-mode .label.ui.toggle.checkbox{
+  color: #f8f8ff !important;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -75,7 +79,7 @@ code {
 }
 
 .friendCards {
-  max-width: 225px !important;
+  max-width: 600px !important;
   /* background-color:  !important; */
   
 }
@@ -208,3 +212,11 @@ code {
 .dark-mode .ui.form .field > label {
   color:white !important;
 }
+
+.dark-mode #toggleDarkModeLabel {
+  color: white !important;
+}
+/* 
+.ui .button:hover {
+  color: black
+} */

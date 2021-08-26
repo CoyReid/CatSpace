@@ -417,6 +417,15 @@
       "coverpic": "https://i.ibb.co/vshvDJn/friendcoverphoto.jpg",
       "posts": [],
       "id": 5
+    },
+    {
+      "name": "cat",
+      "displayname": "cat",
+      "description": "New User",
+      "image": "https://i.pinimg.com/originals/ea/b8/60/eab860a9c45b720fbc527bd304e12a68.jpg",
+      "coverpic": "https://i.ibb.co/vshvDJn/friendcoverphoto.jpg",
+      "posts": [],
+      "id": 6
     }
   ]
 }

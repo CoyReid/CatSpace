@@ -67,7 +67,7 @@ function Friends({usersData, handleLike, handleAddFriend, darkMode}) {
                   value={formData.name}
                   onChange={handleChange}
                 />
-                <Button type="submit">Generate Furry Friend</Button>
+                <Button color="violet" type="submit">Generate Feline Friend</Button>
               </Form>
             </Grid.Column>
           </Grid>

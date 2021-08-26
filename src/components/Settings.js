@@ -72,20 +72,22 @@ function Settings({darkMode, setDarkMode, usersData, updateSettings}) {
             value={formData.description}
             onChange={handleChange}
           />
-          <Button color="blue" type="submit">Save</Button>
+          <Button color="violet" type="submit">Save</Button>
         </Form>
       </Segment>
       
       <Segment>
       <div className="menu item">
+      <h2>Appearance</h2>
       <div className="ui toggle checkbox">
+      
         <input
           type="checkbox"
           name="public"
           checked={darkMode}
           onChange={(e) => setDarkMode(e.target.checked)}
         />
-        <label>Toggle Dark Mode</label>
+        <label id="toggleDarkModeLabel">Toggle Dark Mode</label>
       </div>
     </div>
       </Segment>
