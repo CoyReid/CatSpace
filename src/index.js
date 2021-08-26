@@ -8,7 +8,9 @@ import App from './App';
 
 ReactDOM.render(
   <Router>
+    <div className="bg">
     <App />
+    </div>
   </Router>,
   document.getElementById('root')
 );

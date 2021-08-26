@@ -19,7 +19,7 @@ function Page({ handleLike, darkMode }) {
   return (
     <>
     <ProfileCover profileData={friendData}/>
-    <Segment>
+    <Segment className="pageContainer">
       <PostContainer darkMode = {darkMode} posts={friendData.posts.sort((a, b) => {
         let c = new Date(a.created);
         let d = new Date(b.created);

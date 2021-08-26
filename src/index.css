@@ -10,14 +10,10 @@ body {
 #root {
   background: url("https://live.staticflickr.com/65535/51404514236_81bdcaf4a1_h.jpg") !important;
   background-size: cover !important;
-  /* background-repeat: !important; */
+  background-repeat: none !important;
   background-attachment: fixed !important;
   margin-top: -10px !important;
-  /* height: 2300vh !important; */
-  margin-left: 150px !important;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: auto;
-  image-rendering: smooth;
+
 
 }
 
@@ -215,10 +211,18 @@ code {
 
 /* Settings */
 
+.toggleBox  {
+  height: 200px !important;
+}
+
 .dark-mode .ui.form .field > label {
   color:white !important;
 }
 
 .dark-mode #toggleDarkModeLabel {
   color: white !important;
+}
+
+.pageContainer {
+  height: 400px !important;
 }

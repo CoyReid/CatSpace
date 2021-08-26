@@ -76,7 +76,7 @@ function Settings({darkMode, setDarkMode, usersData, updateSettings}) {
         </Form>
       </Segment>
       
-      <Segment>
+      <Segment className="toggleBox">
       <div className="menu item">
       <h2>Appearance</h2>
       <div className="ui toggle checkbox">
