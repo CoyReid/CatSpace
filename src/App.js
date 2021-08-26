@@ -64,10 +64,10 @@ function App() {
             <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
             <Switch>
               <Route path="/profile">
-                <Profile usersData={usersData} handleLike={handleLike} addPost={updateData} postShow={postShow} setPostShow={setPostShow}/>
+                <Profile usersData={usersData} handleLike={handleLike} addPost={updateData} postShow={postShow} setPostShow={setPostShow} darkMode = {darkMode}/>
               </Route>
               <Route path="/friends">
-                <Friends usersData={usersData} handleLike={handleLike} />
+                <Friends usersData={usersData} handleLike={handleLike} darkMode = {darkMode} />
               </Route>
               <Route path="/settings">
                 <Settings
@@ -84,6 +84,7 @@ function App() {
                   addPost={updateData}
                   postShow={postShow}
                   setPostShow={setPostShow}
+                  darkMode = {darkMode}
                 />
               </Route>
             </Switch>

@@ -4,7 +4,7 @@ import { Segment } from "semantic-ui-react";
 import PostContainer from "./PostContainer";
 import ProfileCover from "./ProfileCover";
 
-function Page({ handleLike }) {
+function Page({ handleLike, darkMode }) {
   
   const [friendData, setFriendData] = useState({posts: []});
 
@@ -20,7 +20,7 @@ function Page({ handleLike }) {
     <>
     <ProfileCover profileData={friendData}/>
     <Segment>
-      <PostContainer posts={friendData.posts.sort((a, b) => {
+      <PostContainer darkMode = {darkMode} posts={friendData.posts.sort((a, b) => {
         let c = new Date(a.created);
         let d = new Date(b.created);
         return d - c;})} handleLike={handleLike}/>

@@ -38,8 +38,12 @@ body {
 .dark-mode .ui.feed>.event>.content .summary,
 .dark-mode .ui.feed>.event>.content .extra.text,
 .dark-mode .ui.cards>.card>.content>.header,
-.dark-mode .ui.cards>.card>.content>.description
-.dark-mode .ui.toggle.checkbox {
+.dark-mode .ui.cards>.card>.content>.description,
+.dark-mode .ui.toggle.checkbox,
+.dark-mode .ui.card>.content>.description, 
+.ui.cards>.card>.content>.description,
+.dark-mode .ui.cards>.card>.extra
+{
   color: #f8f8ff !important;
 }
 
@@ -87,7 +91,8 @@ code {
      /* height of container */
     object-fit: cover !important;
     overflow: hidden !important;
-    border-radius: 10px 50px
+    border-radius: 10px 50px;
+    /* border-style: solid white 10px; */
 }
 
 .profilePic {

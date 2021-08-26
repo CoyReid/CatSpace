@@ -3,7 +3,7 @@ import { Segment, Card, Container } from "semantic-ui-react";
 import { Route, Switch } from "react-router-dom";
 import Page from "./Page";
 
-function Friends({usersData, handleLike}) {
+function Friends({usersData, handleLike, darkMode}) {
   
   const friendsObjs = usersData.slice(1, 4)
 
@@ -11,7 +11,7 @@ function Friends({usersData, handleLike}) {
     <div className="ten wide column">
       <Switch>
         <Route path="/friends/:id">
-          <Page handleLike={handleLike}/>
+          <Page handleLike={handleLike} darkMode = {darkMode}/>
         </Route>
         <Route path="/friends">
           <Container>
@@ -19,7 +19,7 @@ function Friends({usersData, handleLike}) {
             <h2> Friends </h2>
             <Card.Group itemsPerRow={3}>
               {friendsObjs.map((obj) => (
-                <FriendCard key={obj.id} obj={obj}/>
+                <FriendCard key={obj.id} obj={obj} />
               ))}
             </Card.Group>
           </Segment>

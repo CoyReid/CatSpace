@@ -23,7 +23,7 @@ export default function ProfileCover({ profileData }) {
         <Item.Content >
           <Item.Header className="profilePicText">{name}</Item.Header>
           <div className="displayprofile">
-          <Icon name="address card"/>{displayname}
+          <Icon name="address card"/>{` : ${displayname}`}
             <p>"{description}"</p>
           </div>
         </Item.Content>
