@@ -13,6 +13,7 @@ body {
   background-repeat: none !important;
   background-attachment: fixed !important;
   margin-top: -10px !important;
+  
 
 
 }
@@ -224,5 +225,5 @@ code {
 }
 
 .pageContainer {
-  height: 400px !important;
+  height: 600px !important;
 }
