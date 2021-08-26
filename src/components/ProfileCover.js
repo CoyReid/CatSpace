@@ -1,4 +1,4 @@
-import { Segment, Item, Grid, List } from "semantic-ui-react";
+import { Segment, Item, Grid } from "semantic-ui-react";
 export default function ProfileCover({ profileData }) {
   const { name, image, coverpic, displayname, description } = profileData;
 
@@ -24,7 +24,7 @@ export default function ProfileCover({ profileData }) {
           <Item.Header className="profilePicText">{name}</Item.Header>
           <div className="displayprofile">
             <Item>{displayname}</Item>
-            <Item>{description}</Item>
+            <Item>"{description}"</Item>
           </div>
         </Item.Content>
       </Item>

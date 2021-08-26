@@ -50,8 +50,7 @@ function App() {
       <div className="ui main container">
       <DarkModeWrapper darkMode={darkMode}>
         <Grid>
- 
-          <NavBar darkMode = {darkMode} setDarkMode = {setDarkMode} />
+            <NavBar darkMode = {darkMode} setDarkMode = {setDarkMode} />
           <Switch>
             <Route path="/profile">
               <Profile usersData={usersData} handleLike={handleLike}/>
