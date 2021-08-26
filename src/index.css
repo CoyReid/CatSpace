@@ -28,9 +28,11 @@ body {
 .dark-mode .ui.card:hover, 
 .dark-mode .ui.cards>.card  {
   background-color: #1a1a1b;
+  border-style: none;
 }
 .dark-mode .ui.cards>.card:hover {
-  background-color: #22455d ;
+  background-color: #4f50ae ;
+
 }
 
 /* for the post cards  */
