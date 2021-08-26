@@ -6,7 +6,7 @@ import Profile from "./components/Profile";
 import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
-import { Grid } from "semantic-ui-react";
+import { Grid, Sticky } from "semantic-ui-react";
 import DarkModeWrapper from "./components/DarkModeWrapper.js";
 
 function App() {

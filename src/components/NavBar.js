@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import { Grid, Menu, Icon } from "semantic-ui-react";
 
 function NavBar({ darkMode }) {
+
   return (
     <Grid.Column width={3} >
       <Menu
