@@ -6,8 +6,6 @@ import SearchSort from "./SearchSort";
 import { useState } from "react";
 
 function MainPage({ usersData, handleLike, addPost , postShow, setPostShow, darkMode}) {
-
-  console.log("main", darkMode)
   
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState("all");

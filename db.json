@@ -96,15 +96,6 @@
           "name": "@Grumpy211",
           "image": "https://i.ibb.co/fnTcqdc/600-Grumpy.jpg",
           "id": 40
-        },
-        {
-          "pic": "https://cdn2.thecatapi.com/images/bg4.jpg",
-          "fact": "Researchers are unsure exactly how a cat purrs. Most veterinarians believe that a cat purrs by vibrating vocal folds deep in the throat. To do this, a muscle in the larynx opens and closes the air passage about 25 times per second.",
-          "likes": 0,
-          "created": "2021-08-26T16:47:10.623Z",
-          "name": "@Grumpy211",
-          "image": "https://i.ibb.co/fnTcqdc/600-Grumpy.jpg",
-          "id": 41
         }
       ],
       "id": 1
@@ -408,15 +399,6 @@
         }
       ],
       "id": 4
-    },
-    {
-      "name": "@Kitty110",
-      "displayname": "@Kitty110",
-      "description": "New User",
-      "image": "https://i.pinimg.com/originals/ea/b8/60/eab860a9c45b720fbc527bd304e12a68.jpg",
-      "coverpic": "https://i.ibb.co/vshvDJn/friendcoverphoto.jpg",
-      "posts": [],
-      "id": 5
     }
   ]
 }
