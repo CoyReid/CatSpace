@@ -8,7 +8,7 @@ import { useState } from "react";
 function MainPage({ usersData, handleLike, addPost , postShow, setPostShow}) {
   
   const [search, setSearch] = useState("");
-  const [sortBy, setSortBy] = useState("All");
+  const [sortBy, setSortBy] = useState("all");
 
   let mainPagePosts = [];
   usersData.forEach((obj) => {

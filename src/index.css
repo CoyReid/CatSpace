@@ -5,6 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+}
+
+#root {
+  background: url("https://i.pinimg.com/originals/8e/9f/6a/8e9f6af862587056fcc1ae8d19ac2384.jpg") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  margin-top: -10px !important;
+  height: 2300vh !important;
 }
 
 .dark-mode {
@@ -154,6 +163,21 @@ code {
   overflow: hidden;
 }
 
-#navmenu {
-  position: sticky !important;
+#sidemenu {
+  border: none !important;
+  border-color: transparent !important;
+}
+
+.menuItems {
+  text-align: left !important;
+}
+
+.menuIcons {
+  float: left !important;
+  margin-right: 20px !important;
+  margin-top: -10px !important;
+}
+
+.friendCardIcons {
+  margin-right: 10px !important;
 }
