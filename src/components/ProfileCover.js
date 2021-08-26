@@ -1,4 +1,4 @@
-import { Segment, Item, Icon, Grid, Label} from "semantic-ui-react";
+import { Segment, Item, Icon, Grid } from "semantic-ui-react";
 export default function ProfileCover({ profileData }) {
   const { name, image, coverpic, displayname, description } = profileData;
 
