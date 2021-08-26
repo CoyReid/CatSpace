@@ -6,7 +6,7 @@ import Profile from "./components/Profile";
 import MainPage from "./components/MainPage";
 import Settings from "./components/Settings";
 import Friends from "./components/Friends";
-import { Grid, Sticky } from "semantic-ui-react";
+import { Grid } from "semantic-ui-react";
 import DarkModeWrapper from "./components/DarkModeWrapper.js";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
     { posts: "" },
     { posts: "" },
   ]);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [postShow, setPostShow] = useState(false);
 
   useEffect(() => {

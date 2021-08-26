@@ -1,5 +1,5 @@
 import FriendCard from "./FriendCard";
-import { Segment, Card } from "semantic-ui-react";
+import { Segment, Card, Container } from "semantic-ui-react";
 import { Route, Switch } from "react-router-dom";
 import Page from "./Page";
 
@@ -14,6 +14,7 @@ function Friends({usersData, handleLike}) {
           <Page handleLike={handleLike}/>
         </Route>
         <Route path="/friends">
+          <Container>
           <Segment>
             <h2> Friends </h2>
             <Card.Group itemsPerRow={3}>
@@ -22,6 +23,7 @@ function Friends({usersData, handleLike}) {
               ))}
             </Card.Group>
           </Segment>
+          </Container>
         </Route>
       </Switch>
     </div>

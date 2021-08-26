@@ -43,7 +43,7 @@ function Settings({darkMode, setDarkMode, usersData, updateSettings}) {
     <div className="ten wide column">
       <Segment>
       <h2>Settings</h2>
-        <Form onSubmit={handleSubmit}>
+        <Form className="settingsForm" onSubmit={handleSubmit}>
           <Form.Input
             label="Edit Profile Photo"
             placeholder="Enter URL here..."
@@ -72,7 +72,7 @@ function Settings({darkMode, setDarkMode, usersData, updateSettings}) {
             value={formData.description}
             onChange={handleChange}
           />
-          <Button type="submit">Meow</Button>
+          <Button color="blue" type="submit">Save</Button>
         </Form>
       </Segment>
       

@@ -5,7 +5,7 @@ import { Segment, Button, Grid } from "semantic-ui-react";
 import SearchSort from "./SearchSort";
 import { useState } from "react";
 
-function MainPage({ usersData, handleLike, addPost , postShow, setPostShow}) {
+function MainPage({ usersData, handleLike, addPost , postShow, setPostShow, darkMode}) {
   
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState("all");

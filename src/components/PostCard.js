@@ -10,6 +10,7 @@ function PostCard({ post, handleLike }) {
   }
   
   return (
+  
     <div className="event" >
       <div className="label">
         <img
@@ -32,6 +33,7 @@ function PostCard({ post, handleLike }) {
           >
             <i className="like icon"></i> {likes}
           </button>
+          
         </div>
       </div>
     </div>
