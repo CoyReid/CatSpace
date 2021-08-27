@@ -21,7 +21,7 @@ function PostForm({ usersData, addPost }) {
     const newPost = {
       ...formData,
       likes: 0,
-      created: new Date(),
+      created: new Date().toString(),
       name: "@Grumpy211",
       image: "https://i.ibb.co/fnTcqdc/600-Grumpy.jpg",
       id: newId,
