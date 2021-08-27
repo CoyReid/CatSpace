@@ -219,3 +219,8 @@ code {
 .dark-mode #toggleDarkModeLabel {
   color: white !important;
 }
+
+.pdescription {
+
+  width: 600px !important;
+}
