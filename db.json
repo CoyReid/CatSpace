@@ -8,6 +8,15 @@
       "coverpic": "https://static.dw.com/image/18463014_101.jpg",
       "posts": [
         {
+          "pic": "https://cdn2.thecatapi.com/images/bg4.jpg",
+          "fact": "Researchers are unsure exactly how a cat purrs. Most veterinarians believe that a cat purrs by vibrating vocal folds deep in the throat. To do this, a muscle in the larynx opens and closes the air passage about 25 times per second.",
+          "likes": 6,
+          "created": "2021-08-27T02:36:06.601Z",
+          "name": "@Grumpy211",
+          "image": "https://i.ibb.co/fnTcqdc/600-Grumpy.jpg",
+          "id": 41
+        },
+        {
           "pic": "https://cdn2.thecatapi.com/images/ccn.jpg",
           "fact": "A female cat will be pregnant for approximately 9 weeks or between 62 and 65 days from conception to delivery.",
           "likes": 4,
@@ -82,7 +91,7 @@
         {
           "pic": "https://cdn2.thecatapi.com/images/kc.jpg",
           "fact": "A cat can jump up to five times its own height in a single bound.",
-          "likes": 1,
+          "likes": 3,
           "created": "Fri Aug 20 2021 09:17:16 GMT-0500 (Central Daylight Time)",
           "name": "@Grumpy211",
           "image": "https://i.ibb.co/fnTcqdc/600-Grumpy.jpg",
@@ -310,7 +319,7 @@
         {
           "pic": "https://cdn2.thecatapi.com/images/bpc.jpg",
           "fact": "In Siam, the cat was so revered that one rode in a chariot at the head of a parade celebrating the new king.",
-          "likes": 12,
+          "likes": 13,
           "created": "Tue Aug 24 2021 20:11:10 GMT-0500 (Central Daylight Time)",
           "name": "@PussinBoots99",
           "image": "https://i.ibb.co/XVJ0N4d/600puss.jpg",
@@ -391,7 +400,7 @@
         {
           "pic": "https://cdn2.thecatapi.com/images/nHrt_0PV3.jpg",
           "fact": "Ailurophile is the word cat lovers are officially called.",
-          "likes": 1,
+          "likes": 4,
           "created": "Tue Aug 24 2021 18:11:10 GMT-0500 (Central Daylight Time)",
           "name": "@PussinBoots99",
           "image": "https://i.ibb.co/XVJ0N4d/600puss.jpg",
