@@ -1,5 +1,7 @@
 # README
 
+## Description
+
 This project is meant to be a social media/blog site mimic but for cats. 
 
 Demo:
